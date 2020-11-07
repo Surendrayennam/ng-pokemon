@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cricket"
+    }
+  },
+  "defaultProject": "cricket",
+  "cli": {
+    "analytics": "5065214b-3096-475f-8e77-5e86ded107d2"
+  }
 }

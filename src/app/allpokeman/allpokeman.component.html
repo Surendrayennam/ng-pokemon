@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="card shadow" 
+         *ngFor="let pokemon of allpokemon; index as i">
+            <img class="card-img-top"  [src]="'' | defaultimage: 'assets/defaultImage.png'" 
+             [alt]="pokemon.name + ' image cop '"/>
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ pokemon.name }}
+                </h5>
+                <a [routerLink] ="'/details/' + i"  class="btn btn-warning shadow">
+                    View {{ pokemon.name}}
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</div>

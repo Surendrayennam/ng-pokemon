@@ -1,0 +1,30 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    .card {
+        width: 18rem;
+        img {
+            background-color: #dee2e6;
+        }
+        box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+        .list-group-item {
+            padding-left: 0px;
+        }
+        .list-group-item-heading{
+            font-weight: 700;
+        }
+        .card-title{
+            font-size: 1.5rem;
+            color: #3f51b5;
+        }
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        }
+        .card-footer {
+            padding: 0.25rem 1rem;
+        }
+    }
+   
+}

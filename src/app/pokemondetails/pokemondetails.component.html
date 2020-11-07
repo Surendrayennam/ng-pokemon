@@ -1,0 +1,27 @@
+<!-- <div class="row col-12">
+    <ng-container *ngIf="pokemon">
+        <h2 class="col-3">{{pokemon.name}}</h2>
+        <img class="col-3" [src]="pokemon.sprites.front_default"/>
+    <ng-container  *ngFor="let ability of pokemon.abilities">
+        <p class="col-3">
+            {{ ability.ability.name}}
+        </p>
+    </ng-container>
+    </ng-container>
+</div> -->
+
+<div class="card" >
+    <img [src]="pokemon?.sprites?.front_default" class="card-img-top" alt="pokemon sprities">
+    <div class="card-body">
+      <h5 class="card-title">{{pokemon.name}}</h5>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item list-group-item-heading">Skills</li>
+        <li class="list-group-item" *ngFor="let ability of pokemon.abilities"> {{ ability.ability.name}}</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+        <a routerLink="/"  class="btn btn-link">
+            Back
+        </a>
+      </div>
+</div>
